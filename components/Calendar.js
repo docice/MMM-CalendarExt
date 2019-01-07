@@ -281,7 +281,7 @@ Calendar.prototype.fetch = function() {
 							if (startDate.format("HHmmss") == "000000") {
 								isFulldayEvent = 1
 							}
-							endDate = moment(startDate)
+							endDate = moment(startDate).add(1,'hours')
 						}
 					}
 					if(
